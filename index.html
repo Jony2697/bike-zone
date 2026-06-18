@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike Zone</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      html{
+        scroll-behavior:smooth;
+      }
+    </style>
 </head>
 <body>
     <header class="container mx-auto mt-5">
@@ -20,7 +25,7 @@
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
       <li><a>Home</a></li>      
       <li><a>Shop</a></li>
-      <li><a>News</a></li>
+      <li><a >News</a></li>
       <li><a>Contact</a></li>
       </ul>
     </div>
@@ -30,7 +35,7 @@
     <ul class="menu menu-horizontal px-1 mr-10">
       <li><a>Home</a></li>      
       <li><a>Shop</a></li>
-      <li><a>News</a></li>
+      <li><a href="#news">News</a></li>
       <li><a>Contact</a></li>
     </ul>
   </div>
@@ -42,8 +47,8 @@
 
     <!-- hero section -->
     <section class="container mx-auto mt-5">
-        <div class="carousel w-full ">
-  <div id="slide1" class="carousel-item relative w-full bg-[#E76F5110]">
+        <div class="carousel w-full overflow-hidden">
+  <div id="slide1" class="carousel-item relative w-full bg-[#E76F5110] scroll-mt-0">
     <div class="flex items-center justify-around w-full">
       <!-- text content  -->
        <div>
@@ -70,7 +75,7 @@
       <a href="#slide2" class="btn btn-circle">❯</a>
     </div>
   </div>
-  <div id="slide2" class="carousel-item relative w-full bg-[#E76F5110]">
+  <div id="slide2" class="carousel-item relative w-full bg-[#E76F5110] scroll-mt-0">
     <div class="flex items-center justify-around w-full">
       <!-- text content  -->
        <div>
@@ -97,7 +102,7 @@
       <a href="#slide3" class="btn btn-circle">❯</a>
     </div>
   </div>
-  <div id="slide3" class="carousel-item relative w-full bg-[#E76F5110]">
+  <div id="slide3" class="carousel-item relative w-full bg-[#E76F5110] scroll-mt-0">
     <div class="flex items-center justify-around w-full">
       <!-- text content  -->
        <div>
@@ -124,7 +129,7 @@
       <a href="#slide4" class="btn btn-circle">❯</a>
     </div>
   </div>
-  <div id="slide4" class="carousel-item relative w-full bg-[#E76F5110]">
+  <div id="slide4" class="carousel-item relative w-full bg-[#E76F5110] scroll-mt-0">
     <div class="flex items-center justify-around w-full">
       <!-- text content  -->
        <div>
@@ -166,7 +171,7 @@
      </section>
 
      <!-- latest news section -->
-      <section class="container mx-auto mt-14">
+      <section class="container mx-auto mt-14 " id="news">
         <h1 class="text-4xl font-bold text-center">latest News</h1>
 
         <div class="grid grid-cols-3 gap-8 mt-10">
@@ -198,7 +203,58 @@
 
       </section>
 
-      
+    <!-- Testimonials section -->
+     <section class="container mx-auto mt-14">
+        <h1 class="text-4xl font-bold text-center">Happy <span class="text-[#E76F51]">Clients says</span> </h1>
+        <div class="mt-8 grid grid-cols-3 gap-8 mx-auto">
+          <!-- Card - 01 -->
+          <div class="border border-gray-300 rounded-xl p-4 text-center">
+            <img class="w-30 mb-2 mx-auto" src="images/others/user-1.png">
+            <p class="mb-4 ">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+            <div class="flex mb-4 mx-auto justify-center">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-regular.svg">
+            </div>
+            <p class="font-bold text-[#23A6F0] mb-2">Regina Miles</p>
+            <p class="text-gray-500 mb-2 font-bold">Banker</p>
+          </div>
+
+          <!-- Card - 02 -->
+          <div class="border border-gray-300 rounded-xl p-4 text-center">
+            <img class="w-30 mb-2 mx-auto" src="images/others/user-2.png">
+            <p class="mb-4 ">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+            <div class="flex mb-4 mx-auto justify-center">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-regular.svg">
+            </div>
+            <p class="font-bold text-[#23A6F0] mb-2">Regina Miles</p>
+            <p class="text-gray-500 mb-2 font-bold">Banker</p>
+          </div>
+
+          <!-- Card - 03 -->
+          <div class="border border-gray-300 rounded-xl p-4 text-center">
+            <img class="w-30 mb-2 mx-auto" src="images/others/user-3.png">
+            <p class="mb-4 text-center">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+            <div class="flex mb-4 mx-auto justify-center">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-solid.svg">
+              <img class="w-6" src="images/icons/star-regular.svg">
+            </div>
+            <p class="font-bold text-[#23A6F0] mb-2">Regina Miles</p>
+            <p class="text-gray-500 mb-2 font-bold">Banker</p>
+          </div> 
+        </div>
+     </section>
+
+
 </body>
 
 </html>
